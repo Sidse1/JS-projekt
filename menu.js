@@ -24,11 +24,11 @@ function startbannershow() {
 startbannershow();
 
 bannershow.addEventListener("mouseover", function() {
-    bannershow.style.backgroundColor = "#2B00FF";
+    bannershow.style.textDecorationColor = "#2B00FF";
 });
 
 bannershow.addEventListener("mouseout",function() {
-    bannershow.style.backgroundColor = "#FFFFFF";
+    bannershow.style.textDecorationColor = "#000000";
 });
 
 const menuItems = [
