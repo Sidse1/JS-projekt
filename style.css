@@ -12,6 +12,7 @@ body {
    
    header h1 {
     margin: 0;
+    position: relative;
    }
    
    header nav ul {
@@ -23,6 +24,7 @@ body {
    
    header nav ul li {
     margin-right: 20px;
+    display: flex;
    }
    
    header nav a {
@@ -99,4 +101,11 @@ body {
     width: 100% ;
     height: 10%;
     
+   }
+
+   .plumbob {
+    justify-content: left;
+    align-items: left;
+    width: 2.5%;
+    height: 2.5%;
    }
