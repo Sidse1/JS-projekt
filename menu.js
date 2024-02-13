@@ -73,4 +73,44 @@ const menuItems = [
     document.getElementById("main").style.marginLeft = "0";
   }
   
- 
+
+
+
+
+  const languageSelector = document.getElementById("sprog-selector");
+const languages = ["es", "da", "en"]; 
+
+languageSelector.addEventListener("change", function() {
+  let language = languageSelector.value; 
+  if (languages.includes(language)) { 
+    let languageIndex = languages.indexOf(language); 
+    changeLanguage(language, languageIndex); 
+  }
+});
+
+function changeLanguage(language, languageIndex) {
+  if (language === "es") {
+    
+    document.documentElement.lang = "es";
+    document.title = "Sims.es"; 
+  } else if (language === "da") {
+  
+    document.documentElement.lang = "da";
+    document.title = "Sims.dk"; 
+  } else if (language === "en") {
+    
+    document.documentElement.lang = "en";
+    document.title = "Sims.com";  
+  }
+  updateLanguageIndex(languageIndex); 
+}
+
+function updateLanguageIndex(languageIndex) {
+  let temp = languages[0];
+  languages[0] = languages[languageIndex];
+  languages[languageIndex] = temp;
+}
+
+
+
+
