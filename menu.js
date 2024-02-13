@@ -73,21 +73,4 @@ const menuItems = [
     document.getElementById("main").style.marginLeft = "0";
   }
   
-  const languageSelector = document.getElementById("sprog-selector");
-  
-  languageSelector.addEventListener("change", function() {
-    const language = languageSelector.value;
-    if (language === "es") {
-        // Change the page to Spanish
-        document.documentElement.lang = "es";
-        document.title = "sims.es";
-    } else if (language === "da") {
-        // Change the page to Danish
-        document.documentElement.lang = "da";
-        document.title = "sims.dk"; // Adding title for Danish language
-    } else if (language === "en") {
-        // Change the page to English
-        document.documentElement.lang = "en";
-        document.title = "sims.com"; // Adding title for English language
-    } 
-  });
+ 
