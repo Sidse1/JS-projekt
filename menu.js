@@ -54,8 +54,10 @@ const menuItems = [
   document.querySelector("header nav ul").appendChild(navList);
 
 
+  let sidebarArray = []; // Deklarerer en tom array
+
   function toggleNav() {
-    var sidebar = document.getElementById("simssidebar");
+    let sidebar = document.getElementById("simssidebar");
     if (sidebar.style.width === "250px") {
         closeNav();
     } else {
@@ -66,12 +68,20 @@ const menuItems = [
   function openNav() {
     document.getElementById("simssidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    sidebarArray.push("Sidebar åbnet"); 
+    console.log(sidebarArray); 
   }
   
   function closeNav() {
     document.getElementById("simssidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
+    sidebarArray.push("Sidebar lukket"); 
+    console.log(sidebarArray); 
   }
+  
+ 
+  document.getElementById("toggleButton").addEventListener("click", toggleNav);
+  
   
 
 
