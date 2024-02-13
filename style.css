@@ -25,10 +25,12 @@
   padding: 0px;
   box-sizing: border-box;
   color: #000000;
+  text-align:center;
 }
 
 .banner-tekst p {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 body {
