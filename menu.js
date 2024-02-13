@@ -23,13 +23,15 @@ function startbannershow() {
 
 startbannershow();
 
-bannershow.addEventListener("mouseover", function() {
-    bannershow.style.textDecorationColor = "#2B00FF";
-});
+for (let i = 0; i < paragraffer.length; i++) {
+    paragraffer[i].addEventListener("mouseover", function() {
+        this.style.color = "#2B00FF";
+    });
 
-bannershow.addEventListener("mouseout",function() {
-    bannershow.style.textDecorationColor = "#000000";
-});
+    paragraffer[i].addEventListener("mouseout", function() {
+        this.style.color = "#000000";
+    });
+}
 
 const menuItems = [
     { text: "News & Updates", href: "#news" },
