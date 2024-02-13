@@ -147,19 +147,19 @@ body {
 
 
    .sidebar {
-    height: 60%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 60%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
     top: 0;
-    left: 0; /* Placerer sidebjælken til venstre */
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    left: 0; 
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
-/* The sidebar links */
+
 .sidebar a {
     padding: 8px 8px 8px 32px;
     font-family: monospace;
@@ -170,12 +170,12 @@ body {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+
 .sidebar a:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
+
 .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -184,7 +184,7 @@ body {
     margin-left: 50px;
 }
 
-/* The button used to open the sidebar */
+
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -192,9 +192,9 @@ body {
     color: white;
     padding: 10px 15px;
     border: none;
-    position: fixed; /* Fastgør knappen til visning */
-    top: 65px; /* Placerer knappen øverst */
-    right: 25px; /* Placerer knappen til højre */
+    position: fixed; 
+    top: 65px;
+    right: 25px; 
   
 }
 
@@ -204,9 +204,9 @@ body {
 
 
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  
   #main {
-    transition: margin-left .5s; /* If you want a transition effect */
+    transition: margin-left .5s; 
     padding: 20px;
   }
 
@@ -225,8 +225,8 @@ body {
   }
   .container {
     position: relative;
-    max-width: 75%; /* Gør containerens maksimale bredde 50% af skærmbredden */
-    margin: auto; /* Centrer containeren */
+    max-width: 75%; 
+    margin: auto; 
   }
   
   .mySlides {
@@ -235,7 +235,7 @@ body {
   }
   
   .text {
-    flex: 1; /* Gør tekstområdet tage al tilgængelig plads i forhold til billedet */
+    flex: 1; 
     position: absolute;
     top: 50%;
     left: 50%;
