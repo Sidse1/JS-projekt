@@ -24,7 +24,7 @@ function startbannershow() {
 startbannershow();
 
 bannershow.addEventListener("mouseover", function() {
-    bannershow.style.backgroundColor = "2B00FF";
+    bannershow.style.backgroundColor = "#2B00FF";
 });
 
 bannershow.addEventListener("mouseout",function() {
