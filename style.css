@@ -217,3 +217,101 @@ body {
     appearance: none;
     cursor: pointer;
   }
+  .container {
+    position: relative;
+    max-width: 75%; /* Gør containerens maksimale bredde 50% af skærmbredden */
+    margin: auto; /* Centrer containeren */
+  }
+  
+  .mySlides {
+    display: none;
+    position: relative;
+  }
+  
+  .text {
+    flex: 1; /* Gør tekstområdet tage al tilgængelig plads i forhold til billedet */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1; 
+    padding: 20px; /* Juster polstring efter behov */
+  }
+  
+  .text1 {
+    flex: 1; /* Gør tekstområdet tage al tilgængelig plads i forhold til billedet */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1; 
+    padding: 20px; /* Juster polstring efter behov */
+  }
+  .button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1; 
+    margin-top: 45px; /* Tilføj margin til at adskille knappen fra teksten */
+    display: block;
+  }
+  
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .imggalleri {
+    width: 100%;
+    align-items: center;
+    z-index: 0;
+    
+  }
