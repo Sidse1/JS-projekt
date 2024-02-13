@@ -15,26 +15,30 @@
  <img src="plumbob.png" class="plumbob" alt="plumbob billede">
  
  
- <label for="sprog-selector"></label>
-<select id="sprog-selector">
-  <option value="en">English</option>
-  <option value="da">Danish</option>
-  <option value="es">Spanish</option>
-</select>
-
-
+ <div class="container">
     <div id="simssidebar" class="sidebar">
-        <a href="#">Store</a>
-        <a href="#">News & Updates</a>
-        <a href="#">Gallery</a>
-        <a href="#">About</a>
-        <a href="#">Help</a>
-        <a href="#">Forum</a>
+      <!-- Sidebar content -->
+      <a href="#">Store</a>
+      <a href="#">News & Updates</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Forum</a>
     </div>
-    
     <div id="main">
-        <button class="openbtn" onclick="toggleNav()">&#9776;</button>
+      <button class="openbtn" onclick="toggleNav()">&#9776;</button>
     </div>
+    <div class="language-selector">
+      <!-- Your language selector dropdown goes here -->
+      <label for="sprog-selector"></label>
+      <select id="sprog-selector">
+        <option value="en">English</option>
+        <option value="da">Danish</option>
+        <option value="es">Spanish</option>
+      </select>
+    </div>
+  </div>
+  
  
  </header>
  <section id="hero">
