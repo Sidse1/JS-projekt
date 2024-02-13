@@ -3,6 +3,8 @@
 <head>
  <link rel="stylesheet" type="text/css" href="style.css">
  <script src="galleri.js" defer></script>
+ <script src="menu.js" defer></script>
+ <title>dokument</title>
 </head>
 <body>
 <div id="banner-container">
@@ -27,8 +29,17 @@
     <div id="main">
       <button class="openbtn" onclick="toggleNav()">&#9776;</button>
     </div>
- </header>   
+
    
+ </header>   
+
+ <label for="sprog-selector"></label>
+ <select id="sprog-selector">
+   <option value="en">Engelsk</option>
+   <option value="da">Dansk</option>
+   <option value="es">Spansk</option>
+ </select>
+
  <div class="container">
   <div class="mySlides">
       <img src="images/play_free.jpg" alt="spil gratis" class="imggalleri">
@@ -78,9 +89,10 @@
  </ul>
  </section>
  
- <footer>
- <p>&copy; 2022 Electronic Arts. All rights reserved.</p>
- </footer>
- <script src="menu.js"></script>
+
+ 
 </body>
+<footer>
+    <p>&copy; 2022 Electronic Arts. All rights reserved.</p>
+    </footer>
 </html>
