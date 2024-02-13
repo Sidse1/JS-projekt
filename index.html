@@ -8,15 +8,29 @@
  <header>
  <h1>Electronic Arts<br><span class="highlight">The SIMS4 Store</span></h1>
  <img src="plumbob.png" class="plumbob" alt="plumbob billede">
- <nav>
+ 
+ 
+ <label for="sprog-selector"></label>
+<select id="sprog-selector">
+  <option value="en">English</option>
+  <option value="da">Danish</option>
+  <option value="es">Spanish</option>
+</select>
+
+
+    <div id="simssidebar" class="sidebar">
+        <a href="#">Store</a>
+        <a href="#">News & Updates</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Forum</a>
+    </div>
     
- <ul>
- <li><a href="#news">News & Updates</a></li>
- <li><a href="#gallery">Gallery</a></li>
- <li><a href="#about">About</a></li>
- <li><a href="#help">Help</a></li>
- </ul>
- </nav>
+    <div id="main">
+        <button class="openbtn" onclick="toggleNav()">&#9776;</button>
+    </div>
+ 
  </header>
  <section id="hero">
  <h2>Play for Free</h2>
@@ -38,6 +52,6 @@
  <footer>
  <p>&copy; 2022 Electronic Arts. All rights reserved.</p>
  </footer>
- <script src="script.js"></script>
+ <script src="menu.js"></script>
 </body>
 </html>
