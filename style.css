@@ -10,6 +10,9 @@
   height: 30px;
   background-color: #ffffff;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-tekst {
