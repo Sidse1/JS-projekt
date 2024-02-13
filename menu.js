@@ -1,3 +1,36 @@
+let bannershow = document.getElementById("banner-container");
+let paragraffer = bannershow.getElementsByClassName("banner-tekst");
+let intervalTid = 3000; //skift tekst efter 3. sek.
+
+
+function visTekst(index) {
+   for (let i = 0; i < paragraffer.length; i++) {
+        if (i=== index) {
+            paragraffer[i].style.display = "block";
+        } else {
+            paragraffer[i].style.display = "none";
+       }
+    }
+}
+
+function startbannershow() {
+    let index = 0;
+    setInterval(function () {
+        visTekst(index);
+        index = (index + 1) % paragraffer.length;
+    }, intervalTid);
+}
+
+startbannershow();
+
+bannershow.addEventListener("mouseover", function() {
+    bannershow.style.backgroundColor = "2B00FF";
+});
+
+bannershow.addEventListener("mouseout",function() {
+    bannershow.style.backgroundColor = "#FFFFFF";
+});
+
 const menuItems = [
     { text: "News & Updates", href: "#news" },
     { text: "Gallery", href: "#gallery" },
