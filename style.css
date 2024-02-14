@@ -202,8 +202,36 @@ body {
     background-color: #444;
 }
 
+.container {
+  position: relative;
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
 
-  
+.simssidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s;
+}
+
+#toggleButton {
+  position: absolute;
+  top:100%;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
   
   #main {
     transition: margin-left .5s; 

@@ -66,15 +66,13 @@ const menuItems = [
   }
   
   function openNav() {
-    document.getElementById("simssidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("simssidebar").style.right = "0";
     sidebarArray.push("Sidebar åbnet"); 
     console.log(sidebarArray); 
   }
   
   function closeNav() {
-    document.getElementById("simssidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("simssidebar").style.right = "-250px";
     sidebarArray.push("Sidebar lukket"); 
     console.log(sidebarArray); 
   }
