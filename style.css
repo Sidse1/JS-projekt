@@ -157,7 +157,7 @@ body {
   width: 0; 
   position: fixed; 
   z-index: 1; 
-  top: 0;
+  top: 60px;
   right: 0;
   background-color: #333;
   overflow-x: hidden; 
@@ -189,18 +189,21 @@ body {
     margin-left: 50px;
 }
 
-/* styling til åbning af knap */
+/* Styling for open button */
 .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #2B00FF;
-    color: white;
-    padding: 10px 15px;
-    border: none;  
+  position: fixed;
+  top: 40x; /* Adjust as needed */
+  right: 20px; /* Adjust to move the button to the right */
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #2B00FF;
+  color: white;
+  padding: 10px 15px;
+  border: none;  
 }
 
 .openbtn:hover {
-    background-color: #444;
+  background-color: #444;
 }
   
   #main {
@@ -222,7 +225,7 @@ body {
     cursor: pointer;
   }
   .container {
-    position: relative;
+    position: right;
     max-width: 75%; 
     margin: auto; 
   }
