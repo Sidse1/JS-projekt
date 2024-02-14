@@ -151,37 +151,36 @@ body {
     height: 2.5%;
    }
 
-
-   .sidebar {
-    height: 60%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: 0; 
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+/* sidepanel */
+.sidepanel {
+  height: 250px; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
 }
 
-
+/* sidepanel links */
 .sidebar a {
     padding: 8px 8px 8px 32px;
-    font-family: monospace;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s
 }
 
-
+/* mouse hover */
 .sidebar a:hover {
     color: #f1f1f1;
 }
 
-
+/* position og styling af lukke knap*/
 .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -190,54 +189,19 @@ body {
     margin-left: 50px;
 }
 
-
+/* styling til åbning af knap */
 .openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color: #2B00FF;
     color: white;
     padding: 10px 15px;
-    border: none;
-    position: fixed; 
-    top: 65px;
-    right: 25px; 
-  
+    border: none;  
 }
 
 .openbtn:hover {
     background-color: #444;
 }
-
-.container {
-  position: relative;
-  max-width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.simssidebar {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: right 0.5s;
-}
-
-#toggleButton {
-  position: absolute;
-  top:100%;
-  right: 0;
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
-
   
   #main {
     transition: margin-left .5s; 
