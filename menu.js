@@ -65,6 +65,17 @@ const menuItems = [
     }
   }
   
+const toggleButton = document.getElementById("toggleButton");
+const simssidebar = document.getElementById("simssidebar");
+
+toggleButton.addEventListener("click",()=> {
+  if (simssidebar.style.right === "-250px") {
+    openNav();
+  } else {
+    closeNav();
+  }
+});
+
   function openNav() {
     document.getElementById("simssidebar").style.right = "0";
     sidebarArray.push("Sidebar åbnet"); 
