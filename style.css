@@ -8,12 +8,11 @@
 
 /* CSS for styling the popup box */
 .popupBox {
-  position: fixed;
-  top: 50%;
+  position: center;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  max-width: 500px;
+  max-width: 250px;
   padding: 20px;
   box-sizing: border-box;
   background-color: white;
