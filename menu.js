@@ -56,14 +56,10 @@ const menuItems = [
 
 function openNav() {
   document.getElementById("simssidebar").style.width = "250px";
-  sidebarArray.push("Sidebar åbnet");
-  console.log(sidebarArray);
 }
 
 function closeNav() {
-  document.getElementById("simssidebar").style.width = "px";
-  sidebarArray.push("Sidebar lukket");
-  console.log(sidebarArray);
+  document.getElementById("simssidebar").style.width = "0";
 }
 
 
