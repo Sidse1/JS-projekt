@@ -54,39 +54,20 @@ const menuItems = [
   document.querySelector("header nav ul").appendChild(navList);
 
 
-const toggleButton = document.getElementById("toggleButton");
-const simssidebar = document.getElementById("simssidebar");
-
-toggleButton.addEventListener("click", () => {
-  if (simssidebar.style.right === "-250px") {
-    openNav();
-  } else {
-    closeNav();
-  }
-});
-
 function openNav() {
-  document.getElementById("simssidebar").style.right = "0";
+  document.getElementById("simssidebar").style.width = "250px";
   sidebarArray.push("Sidebar åbnet");
   console.log(sidebarArray);
 }
 
 function closeNav() {
-  document.getElementById("simssidebar").style.right = "-250px";
+  document.getElementById("simssidebar").style.width = "px";
   sidebarArray.push("Sidebar lukket");
   console.log(sidebarArray);
 }
 
-let sidebarArray = [];
-  
- 
-  
-  
 
-
-
-
-  const languageSelector = document.getElementById("sprog-selector");
+const languageSelector = document.getElementById("sprog-selector");
 const languages = ["es", "da", "en"]; 
 
 languageSelector.addEventListener("change", function() {
