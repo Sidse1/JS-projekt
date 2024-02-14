@@ -32,38 +32,44 @@ for (let i = 0; i < paragraffer.length; i++) {
         this.style.color = "#000000";
     });
 }
-
 const menuItems = [
-    { text: "News & Updates", href: "#news" },
-    { text: "Gallery", href: "#gallery" },
-    { text: "About", href: "#about" },
-    { text: "Help", href: "#help" },
-  ];
-  
-  const navList = document.createElement("ul");
-  
-  menuItems.forEach(item => {
-    const listItem = document.createElement("li");
-    const link = document.createElement("a");
-    link.textContent = item.text;
-    link.href = item.href;
-    listItem.appendChild(link);
-    navList.appendChild(listItem);
-  });
-  
-  document.querySelector("header nav ul").appendChild(navList);
+  { text: "News & Updates", href: "#news" },
+  { text: "Gallery", href: "#gallery" },
+  { text: "About", href: "#about" },
+  { text: "Help", href: "#help" },
+];
 
+const navList = document.createElement("ul");
 
-  var sidebarArray = []; 
+menuItems.forEach(item => {
+  const listItem = document.createElement("li");
+  const link = document.createElement("a");
+  link.textContent = item.text;
+  link.href = item.href;
+  listItem.appendChild(link);
+  navList.appendChild(listItem);
+});
 
-  function toggleNav() {
-    var sidebar = document.getElementById("simssidebar");
-    if (sidebar.style.width === "250px") {
-        closeNav();
-    } else {
-        openNav();
-    }
+document.getElementById("simssidebar").appendChild(navList);
+
+var sidebarArray = [];
+
+function toggleNav() {
+  var sidebar = document.getElementById("simssidebar");
+  if (sidebar.style.width === "250px") {
+    closeNav();
+  } else {
+    openNav();
   }
+}
+
+function openNav() {
+  document.getElementById("simssidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("simssidebar").style.width = "0";
+}
   
   function openNav() {
     document.getElementById("simssidebar").style.width = "250px";
