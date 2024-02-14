@@ -202,6 +202,14 @@ body {
     background-color: #444;
 }
 
+.container {
+  position: relative;
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .simssidebar {
   position: fixed;
   top: 0;
@@ -223,7 +231,7 @@ body {
   border: none;
   cursor: pointer;
 }
-  
+
   
   #main {
     transition: margin-left .5s; 
