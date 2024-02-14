@@ -130,6 +130,16 @@ function updateLanguageIndex(languageIndex) {
   languages[languageIndex] = temp;
 }
 
-
+window.addEventListener('scroll', function() {
+  const footer = document.querySelector('.footer');
+  const bottom = window.innerHeight - footer.clientHeight;
+  
+  if (window.scrollY >= bottom) {
+    footer.style.position = 'fixed';
+    footer.style.bottom = '0';
+  } else {
+    footer.style.position = 'static';
+  }
+});
 
 
