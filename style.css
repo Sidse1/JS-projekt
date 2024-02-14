@@ -325,7 +325,7 @@ body {
 
   /*footer style*/
   .footer {
-    position: sticky;
+    position: bottom;
     bottom: 0;
     width: 100%;
     padding: 20px 20px;
