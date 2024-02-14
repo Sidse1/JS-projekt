@@ -151,8 +151,8 @@ body {
     height: 2.5%;
    }
 
-/* sidepanel */
-.sidepanel {
+/* sidebar */
+.sidebar {
   height: 250px; 
   width: 0; 
   position: fixed; 
