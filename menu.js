@@ -54,21 +54,10 @@ const menuItems = [
   document.querySelector("header nav ul").appendChild(navList);
 
 
-  let sidebarArray = []; // Deklarerer en tom array
-
-  function toggleNav() {
-    let sidebar = document.getElementById("simssidebar");
-    if (sidebar.style.width === "250px") {
-        closeNav();
-    } else {
-        openNav();
-    }
-  }
-  
 const toggleButton = document.getElementById("toggleButton");
 const simssidebar = document.getElementById("simssidebar");
 
-toggleButton.addEventListener("click",()=> {
+toggleButton.addEventListener("click", () => {
   if (simssidebar.style.right === "-250px") {
     openNav();
   } else {
@@ -76,20 +65,21 @@ toggleButton.addEventListener("click",()=> {
   }
 });
 
-  function openNav() {
-    document.getElementById("simssidebar").style.right = "0";
-    sidebarArray.push("Sidebar åbnet"); 
-    console.log(sidebarArray); 
-  }
-  
-  function closeNav() {
-    document.getElementById("simssidebar").style.right = "-250px";
-    sidebarArray.push("Sidebar lukket"); 
-    console.log(sidebarArray); 
-  }
+function openNav() {
+  document.getElementById("simssidebar").style.right = "0";
+  sidebarArray.push("Sidebar åbnet");
+  console.log(sidebarArray);
+}
+
+function closeNav() {
+  document.getElementById("simssidebar").style.right = "-250px";
+  sidebarArray.push("Sidebar lukket");
+  console.log(sidebarArray);
+}
+
+let sidebarArray = [];
   
  
-  document.getElementById("toggleButton").addEventListener("click", toggleNav);
   
   
 
