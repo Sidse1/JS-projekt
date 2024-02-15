@@ -1,5 +1,3 @@
-
-
 *{
   margin: 0;
   padding: 0;
@@ -7,19 +5,21 @@
 }
 
 /* CSS for styling the popup box */
-.popupBox {
-  position: center;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  max-width: 250px;
+.popup {
+  position: absolute;
+  width: 75%;
+ background-color: #2B00FF;
   padding: 20px;
   box-sizing: border-box;
-  background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .close-button {
@@ -27,14 +27,15 @@
   top: 10px;
   right: 10px;
   padding: 5px 10px;
-  background-color: transparent;
+  background-color:greenyellow;
   border: none;
   font-size: 16px;
   cursor: pointer;
+  justify-content: center;
 }
 
-#popupBox img {
-  max-width: 100%;
+.popupImage {
+  max-width: 50%;
   height: auto;
 }
 
