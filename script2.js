@@ -7,7 +7,7 @@ let currentImageIndex = sessionStorage.getItem('currentImageIndex') || 0;
 // Function to open popup
 function openPopup() {
   popup.style.display = 'block';
-  popup.style.zIndex = '9999'; // Set z-index to bring popup to front
+  popup.style.zIndex = '3'; // Set z-index to bring popup to front
   popupImage.src = adImages[currentImageIndex];
   currentImageIndex = (parseInt(currentImageIndex) + 1) % totalImages;
   sessionStorage.setItem('currentImageIndex', currentImageIndex);
