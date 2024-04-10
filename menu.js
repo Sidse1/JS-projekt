@@ -1,6 +1,6 @@
 let bannershow = document.getElementById("banner-container");
 let paragraffer = bannershow.getElementsByClassName("banner-tekst");
-let intervalTid = 3000; //skift tekst efter 3. sek.
+let intervalTid = 3000; 
 
 
 function visTekst(index) {
